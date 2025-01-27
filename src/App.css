@@ -1,0 +1,170 @@
+/* 1. Configuración Global */
+html {
+    box-sizing: border-box; /* Hace que los tamaños incluyan padding y border */
+    font-size: 16px; /* Define la base del tamaño de fuente (1rem = 16px) */
+    scroll-behavior: smooth; /* Hace que los enlaces anclados sean más suaves */
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; /* Asegura que todos los elementos usen border-box */
+    margin: 0; /* Resetea márgenes */
+    padding: 0; /* Resetea paddings */
+    line-height: 1.5; /* Mejora la legibilidad ¿Por qué? Un valor de line-height adecuado mejora la legibilidad. Si el valor es muy bajo, las líneas de texto estarán muy cerca unas de otras, lo que dificulta la lectura. Si es demasiado alto, se verá disperso.*/
+  }
+  
+  /* 2. Estilos Base para el Body */
+  body {
+    font-family: 'Inter', sans-serif; /* Fuente profesional, usa Google Fonts */
+    color: #333; /* Color de texto predeterminado */
+    background-color: #915959; /* Fondo neutro */
+    overflow-x: hidden; /* Evita scroll horizontal no deseado Sin esta propiedad, si alguna imagen, div, o elemento se desborda hacia el lado derecho, podría aparecer una barra de desplazamiento horizontal. Con overflow-x: hidden; esto se evita.*/
+    min-height: 100vh; /* Asegura que el body ocupe toda la ventana , 100vh significa 100% de la altura de la ventana de visualización (view height). Así, incluso si el contenido no es lo suficientemente largo como para llenar la pantalla, el body ocupará toda la altura disponible.*/
+  }
+  
+  /* 3. Tipografía Base */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; /* Titulares con peso medio */
+    color: #222; /* Títulos más oscuros para contraste */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Tamaño principal */
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1rem; /* Texto de párrafo */
+    margin-bottom: 1rem; /* Espaciado entre párrafos */
+  }
+  
+  a {
+    color: #007bff; /* Color de enlace */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Suaviza el hover */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Cambia el color al pasar el mouse */
+  }
+  
+  /* 4. Imágenes y Multimedia */
+  img, video {
+    max-width: 100%; /* Evita desbordes */
+    height: auto; /* Mantiene proporciones */
+    display: block; /* Evita espacios extra en imágenes inline */
+  }
+  
+  /* 5. Listas */
+  ul, ol {
+    margin-left: 1.5rem; /* Sangría para listas */
+    list-style-position: outside; /* Hace que los ítems se alineen correctamente */
+  }
+  
+  li {
+    margin-bottom: 0.5rem; /* Espaciado entre ítems */
+  }
+  
+  /* 6. Botones */
+  button {
+    font-family: inherit; /* Usa la misma fuente que el resto del sitio */
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Tamaño cómodo */
+    border: none;
+    border-radius: 0.5rem; /* Botones redondeados */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Oscurece al pasar el mouse */
+  }
+  
+  /* 7. Formularios */
+input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem; /* Espaciado entre campos */
+ }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none; /* Elimina el contorno azul */
+    border-color: #007bff; /* Agrega un borde azul */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Añade un efecto sutil */
+  }
+  
+  /* 8. Contenedores Responsivos */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Máximo ancho */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 1rem; /* Padding interno */
+  }
+  
+  /* 9. Sistema de Grilla */
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente */
+    gap: 1rem; /* Espaciado entre columnas */
+  }
+  
+  .col {
+    flex: 1; /* Todas las columnas ocupan el mismo espacio */
+    min-width: 200px; /* Mínimo tamaño de columna */
+  }
+  
+  /* 10. Clases de Utilidad */
+  .hidden {
+    display: none !important;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .mt-1 {
+    margin-top: 0.5rem;
+  }
+  
+  .mb-1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .yellow{
+    background-color: #09c8ec;
+  }
+  .skyblue{
+    background-color: #fec104;
+  }
